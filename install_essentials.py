@@ -84,7 +84,7 @@ def sublime():
 # WPS
 def wps():
     wps = str(input("Download WPS? Y/y or N/n? ")).strip().upper()
-    if((wps == "Y") or (wps == "YES"):
+    if(wps == "Y") or (wps == "YES"):
         os.system("flatpak install flathub com.wps.Office")
     elif(wps == "N") or (wps == "NO"):
         print("OK")
