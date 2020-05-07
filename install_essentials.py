@@ -1,3 +1,8 @@
+""" 
+    Author: Vinicius Bacelar
+    Version: 1.0
+    GitHub @vinicius-bacelar
+"""
 import os
 print("Start script")
 # Main tools
@@ -6,6 +11,9 @@ def update(): os.system("sudo apt-get update")
 
 # Autoremove
 def autoremove(): os.system("sudo apt autoremove")
+
+# Essential dependencies 
+def dependencies(): os.system("sudo apt-get install -y build-essential checkinstall && sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev")
 
 # Propiertes common
 def common(): os.system("sudo apt-get install software-properties-common")
@@ -19,8 +27,16 @@ def codecs(): os.system("sudo apt install libdvd-pkg && sudo dpkg-reconfigure li
 # Tweaks
 def tweaks(): os.system("sudo apt-get install gnome-tweaks")
 
-# Download git
+# Download Git
 def git(): os.system("sudo apt-get install git")
+
+# Download Python
+def python(): 
+    os.system("sudo apt install python3-pip && sudo apt install -y build-essential libssl-dev libffi-dev python3-dev")
+    os.system("sudo apt-get install -y python3-distutils python3-testresources")
+
+# Download VirtualEnv
+def virtualenv(): os.system("sudo apt install -y python3-venv")
 
 # Download Ruby
 def ruby(): os.system("sudo apt-get install ruby-full")
@@ -219,7 +235,7 @@ def docker():
     else:
         print("Incorrect answer")
 
-#PyCharm
+# PyCharm
 def pycharm():
     pycharm = str(input("Download PyCharm CE? Y/y or N/n? "))
     if (pycharm == "y") or (pycharm == "Y") or (pycharm == "yes"):
@@ -229,7 +245,7 @@ def pycharm():
     else: 
         print("incorrect answer")
 
-#Spotify
+# Spotify
 def spotify():
     spotify = str(input("Download Spotify? Y/y or N/n? "))
     if(spotify == "y") or (spotify == "Y") or (spotify == "yes"):
@@ -251,6 +267,8 @@ def main():
     git()
     snap()
     flatpak()
+    python()
+    virtualenv()
     ruby()
     php()
     apache2()
