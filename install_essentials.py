@@ -3,8 +3,9 @@
     Version: 1.0.1
     GitHub @vinicius-bacelar
 """
+
 import os
-print("Start script")
+print("======Start script======")
 # Main tools
 # Update your repositories
 def update(): os.system("sudo apt-get update")
@@ -312,4 +313,4 @@ def end():
 main()
 app()
 end()
-print("End script")
+print("======End script======")
