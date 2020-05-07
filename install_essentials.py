@@ -78,7 +78,7 @@ def transport_https(): os.system("sudo apt-get install apt-transport-https")
 
 # Sublime
 def sublime():
-    sublime = str(input("Download Sublime-text3? Y/y or N/n? ")).strip().upper()
+    sublime = str(input("Install Sublime-text3? Y/y or N/n? ")).strip().upper()
     if (sublime == "Y") or (sublime=="YES"):
         os.system("sudo snap install sublime-text --classic")
     elif (sublime == "N") or (sublime == "NO"):
@@ -88,7 +88,7 @@ def sublime():
 
 # WPS
 def wps():
-    wps = str(input("Download WPS? Y/y or N/n? ")).strip().upper()
+    wps = str(input("Install WPS? Y/y or N/n? ")).strip().upper()
     if(wps == "Y") or (wps == "YES"):
         os.system("flatpak install flathub com.wps.Office")
     elif(wps == "N") or (wps == "NO"):
@@ -98,7 +98,7 @@ def wps():
 
 # Insomnia
 def insomnia():
-    insomnia = str(input("Download Insomnia? Y/y or N/n? ")).strip().upper()
+    insomnia = str(input("Install Insomnia? Y/y or N/n? ")).strip().upper()
     if (insomnia == "Y") or (insomnia == "YES"):
         os.system("sudo snap install insomnia")
     elif (insomnia == "N") or (insomnia == "NO"):
@@ -108,7 +108,7 @@ def insomnia():
 
 # Visual Studio Code
 def visual_studio_code():
-    visual_studio = str(input("Download Visual Studio code? Y/y or N/n? ")).strip().upper()
+    visual_studio = str(input("Install Visual Studio code? Y/y or N/n? ")).strip().upper()
     if (visual_studio == "Y") or (visual_studio == "YES"):
         os.system("sudo snap install code --classic")
     elif (visual_studio == "N") or (visual_studio == "NO"):
@@ -118,7 +118,7 @@ def visual_studio_code():
 
 # Android Studio
 def android():
-    android_studio = str(input("Download Android Studio? Y/y or N/n? ")).strip().upper()
+    android_studio = str(input("Install Android Studio? Y/y or N/n? ")).strip().upper()
     if (android_studio == "Y") or (android_studio == "YES"):
         os.system("sudo snap install android-studio --classic")
     elif (android_studio == "N") or (android_studio == "NO"):
@@ -128,7 +128,7 @@ def android():
 
 # Webstorm
 def webstorm():
-    webstorm = str(input("Download PhpStorm? Y/y or N/n? ")).strip().upper()
+    webstorm = str(input("Install PhpStorm? Y/y or N/n? ")).strip().upper()
     if (webstorm == "Y") or (webstorm == "YES"):
         os.system("sudo snap install webstorm --classic")
     elif(webstorm == "N") or (webstorm == "NO"):
@@ -138,7 +138,7 @@ def webstorm():
 
 # CodeBlocks
 def codeblocks():
-    codeblocks = str(input("Download CodeBlocks? Y/y or N/n? ")).strip().upper()
+    codeblocks = str(input("Install CodeBlocks? Y/y or N/n? ")).strip().upper()
     if (codeblocks == "Y") or (codeblocks == "YES"):
         os.system("sudo apt-get install codeblocks")
     elif(codeblocks == "N") or (codeblocks == "NO"):
@@ -148,7 +148,7 @@ def codeblocks():
 
 # RubyMine
 def rubymine():
-    ruby = str(input("Download RubyMine? Y/y or N/n? ")).strip().upper()
+    ruby = str(input("Install RubyMine? Y/y or N/n? ")).strip().upper()
     if(ruby == "Y") or (ruby == "YES"):
         os.system("sudo snap install rubymine --classic")
     elif(ruby == "N") or (ruby == "NO"):
@@ -158,7 +158,7 @@ def rubymine():
 
 # VLC
 def vlc():
-    vlc = str(input("Download VLC? Y/y or N/n? ")).strip().upper()
+    vlc = str(input("Install VLC? Y/y or N/n? ")).strip().upper()
     if(vlc == "Y") or (vlc == "YES"):
         os.system("sudo apt-get install -y vlc")
     elif(vlc == "N") or (vlc == "NO"):
@@ -168,7 +168,7 @@ def vlc():
 
 # qBittorrent
 def bittorrent():
-    bittorrent = str(input("Download Bittorrent? Y/y or N/n? ")).strip().upper()
+    bittorrent = str(input("Install Bittorrent? Y/y or N/n? ")).strip().upper()
     if (bittorrent == "Y") or (bittorrent == "YES"):
         os.system(
             "sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable && sudo apt-get install qbittorrent")
@@ -179,7 +179,7 @@ def bittorrent():
 
 # PhpMyAdmin
 def myadmin():
-    php = str(input("Download PhpMyAdmin? Y/y or N/n? ")).strip().upper()
+    php = str(input("Install PhpMyAdmin? Y/y or N/n? ")).strip().upper()
     if(php == "Y") or (php == "YES"):
         os.system("sudo apt-get install phpmyadmin")
     elif(php == "N") or (php == "NO"):
@@ -189,7 +189,7 @@ def myadmin():
 
 # Filezilla
 def filezilla():
-    filezilla = str(input("Download Filezilla? Y/y or N/n? ")).strip().upper()
+    filezilla = str(input("Install Filezilla? Y/y or N/n? ")).strip().upper()
     if (filezilla == "y") or (filezilla == "Y") or (filezilla == "yes"):
         os.system("flatpak install flathub org.filezillaproject.Filezilla")
     elif(filezilla == "N") or (filezilla == "NO"):
@@ -199,7 +199,7 @@ def filezilla():
 
 # Steam
 def steam():
-    steam = str(input("Download Steam? Y/y or N/n? ")).strip().upper()
+    steam = str(input("Install Steam? Y/y or N/n? ")).strip().upper()
     if(steam == "Y") or (steam == "YES"):
         os.system("flatpak install flathub com.valvesoftware.Steam")
     elif(steam == "N") or (steam == "NO"):
@@ -209,7 +209,7 @@ def steam():
 
 # Discord
 def discord():
-    discord = str(input("Download Discord? Y/y or N/n? ")).strip().upper()
+    discord = str(input("Install Discord? Y/y or N/n? ")).strip().upper()
     if(discord == "Y") or (discord == "YES"):
         os.system("flatpak install flathub com.discordapp.Discord")
     elif(discord == "N") or (discord == "NO"):
@@ -219,7 +219,7 @@ def discord():
 
 # Chrome
 def chrome():
-    chrome = str(input("Download Chrome? Y/y or N/n? ")).strip().upper()
+    chrome = str(input("Install Chrome? Y/y or N/n? ")).strip().upper()
     if(chrome == "Y") or (chrome == "YES"):
         os.system(
             "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb")
@@ -232,7 +232,7 @@ def chrome():
 
 # Docker
 def docker():
-    docker = str(input("Download Docker? Y/y or N/n? ")).strip().upper()
+    docker = str(input("Install Docker? Y/y or N/n? ")).strip().upper()
     if(docker == "Y") or (docker == "YES"):
         os.system("sudo apt install docker.io")
     elif(docker == "N") or (docker == "NO"):
@@ -242,7 +242,7 @@ def docker():
 
 # PyCharm
 def pycharm():
-    pycharm = str(input("Download PyCharm CE? Y/y or N/n? ")).strip().upper()
+    pycharm = str(input("Install PyCharm CE? Y/y or N/n? ")).strip().upper()
     if(pycharm == "Y") or (pycharm == "YES"):
         os.system("sudo snap install pycharm-community --classic")
     elif(pycharm == "N") or (pycharm == "NO"):
@@ -252,7 +252,7 @@ def pycharm():
 
 # Spotify
 def spotify():
-    spotify = str(input("Download Spotify? Y/y or N/n? ")).strip().upper()
+    spotify = str(input("Install Spotify? Y/y or N/n? ")).strip().upper()
     if(spotify == "Y") or (spotify == "YES"):
         os.system("snap install spotify")
     elif(spotify == "N") or (spotify == "NO"):
