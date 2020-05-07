@@ -160,7 +160,7 @@ def bittorrent():
 def myadmin():
     php = str(input("Download PhpMyAdmin? Y/y or N/n? "))
     if(php == "y") or (php == "Y") or (php == "yes"):
-        os.system("apt-get install phpmyadmin")
+        os.system("sudo apt-get install phpmyadmin")
     elif(php == "n") or (php == "N") or (php == "no"):
         print("OK")
     else:
