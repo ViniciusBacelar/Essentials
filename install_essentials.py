@@ -229,6 +229,16 @@ def pycharm():
     else: 
         print("incorrect answer")
 
+#Spotify
+def spotify():
+    spotify = str(input("Download Spotify? Y/y or N/n? "))
+    if(spotify == "y") or (spotify == "Y") or (spotify == "yes"):
+        os.system("snap install spotify")
+    elif(spotify == "n") or (spotify == "N") or (spotify == "no"):
+        print("OK")
+    else:
+        print("Incorrect answer")
+
 def main():
     update()
     upgrade()
@@ -259,6 +269,7 @@ def app():
     codeblocks()
     rubymine()
     vlc()
+    spotify()
     bittorrent()
     docker()
     myadmin()
