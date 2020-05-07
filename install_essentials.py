@@ -219,6 +219,16 @@ def docker():
     else:
         print("Incorrect answer")
 
+#PyCharm
+def pycharm():
+    pycharm = str(input("Download PyCharm CE? Y/y or N/n? "))
+    if (pycharm == "y") or (pycharm == "Y") or (pycharm == "yes"):
+        os.system("sudo snap install pycharm-community --classic")
+    elif(pycharm == "n") or (pycharm == "N") or (pycharm == "no"):
+        print("OK")
+    else: 
+        print("incorrect answer")
+
 def main():
     update()
     upgrade()
@@ -245,6 +255,7 @@ def app():
     visual_studio_code()
     android()
     webstorm()
+    pycharm()
     codeblocks()
     rubymine()
     vlc()
