@@ -1,6 +1,6 @@
 """ 
     Author: Vinicius Bacelar
-    Version: 1.0
+    Version: 1.0.1
     GitHub @vinicius-bacelar
 """
 import os
@@ -73,188 +73,189 @@ def transport_https(): os.system("sudo apt-get install apt-transport-https")
 
 # Sublime
 def sublime():
-    sublime = str(input("Download Sublime-text3? Y/y or N/n? "))
-    if (sublime == "y") or (sublime == "Y") or (sublime == "yes"):
+    sublime = str(input("Download Sublime-text3? Y/y or N/n? ")).strip().upper()
+    if (sublime == "Y") or (sublime=="YES"):
         os.system("sudo snap install sublime-text --classic")
-    elif (sublime == "n") or (sublime == "N") or (sublime == "no"):
+    elif (sublime == "N") or (sublime == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # WPS
 def wps():
-    wps = str(input("Download WPS? Y/y or N/n? "))
-    if(wps == "y") or (wps == "Y") or (wps == "yes"):
+    wps = str(input("Download WPS? Y/y or N/n? ")).strip().upper()
+    if((wps == "Y") or (wps == "YES"):
         os.system("flatpak install flathub com.wps.Office")
-    elif(wps == "n") or (wps == "N") or (wps == "no"):
+    elif(wps == "N") or (wps == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # Insomnia
 def insomnia():
-    insomnia = str(input("Download Insomnia? Y/y or N/n? "))
-    if (insomnia == "y") or (insomnia == "Y") or (insomnia == "yes"):
+    insomnia = str(input("Download Insomnia? Y/y or N/n? ")).strip().upper()
+    if (insomnia == "Y") or (insomnia == "YES"):
         os.system("sudo snap install insomnia")
-    elif (insomnia == "n") or (insomnia == "N") or (insomnia == "no"):
+    elif (insomnia == "N") or (insomnia == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # Visual Studio Code
 def visual_studio_code():
-    visual_studio = str(input("Download Visual Studio code? Y/y or N/n? "))
-    if (visual_studio == "y") or (visual_studio == "Y") or (visual_studio == "yes"):
+    visual_studio = str(input("Download Visual Studio code? Y/y or N/n? ")).strip().upper()
+    if (visual_studio == "Y") or (visual_studio == "YES"):
         os.system("sudo snap install code --classic")
-    elif (visual_studio == "n") or (visual_studio == "N") or (visual_studio == "no"):
+    elif (visual_studio == "N") or (visual_studio == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # Android Studio
 def android():
-    android_studio = str(input("Download Android Studio? Y/y or N/n? "))
-    if (android_studio == "y") or (android_studio == "Y") or (android_studio == "yes"):
+    android_studio = str(input("Download Android Studio? Y/y or N/n? ")).strip().upper()
+    if (android_studio == "Y") or (android_studio == "YES"):
         os.system("sudo snap install android-studio --classic")
-    elif (android_studio == "n") or (android_studio == "N") or (android_studio == "no"):
+    elif (android_studio == "N") or (android_studio == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # Webstorm
 def webstorm():
-    webstorm = str(input("Download PhpStorm? Y/y or N/n? "))
-    if (webstorm == "y") or (webstorm == "Y") or (webstorm == "yes"):
+    webstorm = str(input("Download PhpStorm? Y/y or N/n? ")).strip().upper()
+    if (webstorm == "Y") or (webstorm == "YES"):
         os.system("sudo snap install webstorm --classic")
-    elif(webstorm == "n") or (webstorm == "N") or (webstorm == "no"):
+    elif(webstorm == "N") or (webstorm == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # CodeBlocks
 def codeblocks():
-    codeblocks = str(input("Download CodeBlocks? Y/y or N/n? "))
-    if (codeblocks == "Y") or (codeblocks == "y") or (codeblocks == "yes"):
+    codeblocks = str(input("Download CodeBlocks? Y/y or N/n? ")).strip().upper()
+    if (codeblocks == "Y") or (codeblocks == "YES"):
         os.system("sudo apt-get install codeblocks")
-    elif(codeblocks == "N") or (codeblocks == "n") or (codeblocks == "no"):
+    elif(codeblocks == "N") or (codeblocks == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # RubyMine
 def rubymine():
-    ruby = str(input("Download RubyMine? Y/y or N/n? "))
-    if(ruby == "y") or (ruby == "Y") or (ruby == "yes"):
+    ruby = str(input("Download RubyMine? Y/y or N/n? ")).strip().upper()
+    if(ruby == "Y") or (ruby == "YES"):
         os.system("sudo snap install rubymine --classic")
-    elif(ruby == "n") or (ruby == "N") or (ruby == "no"):
+    elif(ruby == "N") or (ruby == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # VLC
 def vlc():
-    vlc = str(input("Download VLC? Y/y or N/n? "))
-    if (vlc == "y") or (vlc == "Y") or (vlc == "yes"):
+    vlc = str(input("Download VLC? Y/y or N/n? ")).strip().upper()
+    if(vlc == "Y") or (vlc == "YES"):
         os.system("sudo apt-get install -y vlc")
-    elif(vlc == "n") or (vlc == "N") or (vlc == "no"):
+    elif(vlc == "N") or (vlc == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # qBittorrent
 def bittorrent():
-    bittorrent = str(input("Download Bittorrent? Y/y or N/n? "))
-    if (bittorrent == "y") or (bittorrent == "Y") or (bittorrent == "yes"):
+    bittorrent = str(input("Download Bittorrent? Y/y or N/n? ")).strip().upper()
+    if (bittorrent == "Y") or (bittorrent == "YES"):
         os.system(
             "sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable && sudo apt-get install qbittorrent")
-    elif (bittorrent == "n") or (bittorrent == "N") or (bittorrent == "no"):
+    elif(bittorrent == "N") or (bittorrent == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # PhpMyAdmin
 def myadmin():
-    php = str(input("Download PhpMyAdmin? Y/y or N/n? "))
-    if(php == "y") or (php == "Y") or (php == "yes"):
+    php = str(input("Download PhpMyAdmin? Y/y or N/n? ")).strip().upper()
+    if(php == "Y") or (php == "YES"):
         os.system("sudo apt-get install phpmyadmin")
-    elif(php == "n") or (php == "N") or (php == "no"):
+    elif(php == "N") or (php == "NO"):
         print("OK")
     else:
         print("Incorrect Answer")
 
 # Filezilla
 def filezilla():
-    filezilla = str(input("Download Filezilla? Y/y or N/n? "))
+    filezilla = str(input("Download Filezilla? Y/y or N/n? ")).strip().upper()
     if (filezilla == "y") or (filezilla == "Y") or (filezilla == "yes"):
         os.system("flatpak install flathub org.filezillaproject.Filezilla")
-    elif(filezilla == "n") or (filezilla == "N") or (filezilla == "no"):
+    elif(filezilla == "N") or (filezilla == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # Steam
 def steam():
-    steam = str(input("Download Steam? Y/y or N/n? "))
-    if (steam == "y") or (steam == "Y") or (steam == "yes"):
+    steam = str(input("Download Steam? Y/y or N/n? ")).strip().upper()
+    if(steam == "Y") or (steam == "YES"):
         os.system("flatpak install flathub com.valvesoftware.Steam")
-    elif (steam == "n") or (steam == "N") or (steam == "no"):
+    elif(steam == "N") or (steam == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # Discord
 def discord():
-    discord = str(input("Download Discord? Y/y or N/n? "))
-    if (discord == "y") or (discord == "Y") or (discord == "yes"):
+    discord = str(input("Download Discord? Y/y or N/n? ")).strip().upper()
+    if(discord == "Y") or (discord == "YES"):
         os.system("flatpak install flathub com.discordapp.Discord")
-    elif(discord == "n") or (discord == "N") or (discord == "no"):
+    elif(discord == "N") or (discord == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # Chrome
 def chrome():
-    chrome = str(input("Download Chrome? Y/y or N/n? "))
-    if (chrome == "y") or (chrome == "Y") or (chrome == "yes"):
+    chrome = str(input("Download Chrome? Y/y or N/n? ")).strip().upper()
+    if(chrome == "Y") or (chrome == "YES"):
         os.system(
             "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb")
         os.system("sudo dpkg -i chrome.deb")
         os.system("sudo apt-get install -f")
-    elif(chrome == "n") or (chrome == "N") or (chrome == "no"):
+    elif(chrome == "N") or (chrome == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # Docker
 def docker():
-    docker = str(input("Download Docker? Y/y or N/n? "))
-    if(docker == "y") or (docker == "Y") or (docker == "yes"):
+    docker = str(input("Download Docker? Y/y or N/n? ")).strip().upper()
+    if(docker == "Y") or (docker == "YES"):
         os.system("sudo apt install docker.io")
-    elif(docker == "n") or (docker == "N") or (docker == "no"):
+    elif(docker == "N") or (docker == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
 # PyCharm
 def pycharm():
-    pycharm = str(input("Download PyCharm CE? Y/y or N/n? "))
-    if (pycharm == "y") or (pycharm == "Y") or (pycharm == "yes"):
+    pycharm = str(input("Download PyCharm CE? Y/y or N/n? ")).strip().upper()
+    if(pycharm == "Y") or (pycharm == "YES"):
         os.system("sudo snap install pycharm-community --classic")
-    elif(pycharm == "n") or (pycharm == "N") or (pycharm == "no"):
+    elif(pycharm == "N") or (pycharm == "NO"):
         print("OK")
     else: 
         print("incorrect answer")
 
 # Spotify
 def spotify():
-    spotify = str(input("Download Spotify? Y/y or N/n? "))
-    if(spotify == "y") or (spotify == "Y") or (spotify == "yes"):
+    spotify = str(input("Download Spotify? Y/y or N/n? ")).strip().upper()
+    if(spotify == "Y") or (spotify == "YES"):
         os.system("snap install spotify")
-    elif(spotify == "n") or (spotify == "N") or (spotify == "no"):
+    elif(spotify == "N") or (spotify == "NO"):
         print("OK")
     else:
         print("Incorrect answer")
 
+#Main function 
 def main():
     update()
     upgrade()
@@ -275,7 +276,8 @@ def main():
     mysql()
     node()
     yarn()
-    
+ 
+#Function install apps    
 def app():
     sublime()
     wps()
