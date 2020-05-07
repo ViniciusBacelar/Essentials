@@ -230,7 +230,7 @@ def main():
     tweaks()
     git()
     snap()
-    flatpak
+    flatpak()
     ruby()
     php()
     apache2()
