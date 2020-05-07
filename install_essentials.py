@@ -198,7 +198,7 @@ def discord():
 
 # Chrome
 def chrome():
-    chrome = str(input("Download Discord? Y/y or N/n? "))
+    chrome = str(input("Download Chrome? Y/y or N/n? "))
     if (chrome == "y") or (chrome == "Y") or (chrome == "yes"):
         os.system(
             "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb")
