@@ -33,6 +33,11 @@ def git(): os.system("sudo apt-get install git")
 # Download Python
 def python(): 
     os.system("sudo apt install python3-pip && sudo apt install -y build-essential libssl-dev libffi-dev python3-dev")
+    os.system("sudo apt-get install git python3-dev python3-setuptools python3-numpy python3-opengl \
+    libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev \
+    libsdl1.2-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev \
+    libtiff5-dev libx11-6 libx11-dev fluid-soundfont-gm timgm6mb-soundfont \
+    xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic fontconfig fonts-freefont-ttf libfreetype6-dev")
     os.system("sudo apt-get install -y python3-distutils python3-testresources")
 
 # Download VirtualEnv
