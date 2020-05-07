@@ -125,6 +125,7 @@ def yarn():
 def snap():
     os.system("sudo apt install snapd && sudo snap install snap-store")
 
+# Install Make
 
 def make():
     os.system("sudo apt-get install make")
