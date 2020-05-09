@@ -1,7 +1,7 @@
 """ 
         Author: Vinicius Bacelar
         Version: 1.0.1
-        GitHub: @vinicius-bacelar
+        GitHub: @ViniciusBacelar
 """
 
 
@@ -357,7 +357,7 @@ def essentials():
     # Link GitHub
 
     def github():
-        os.system('python3 -m webbrowser -t "https://github.com/vinicius-bacelar"')
+        os.system('python3 -m webbrowser -t "https://github.com/ViniciusBacelar"')
 
     # Main function
 
