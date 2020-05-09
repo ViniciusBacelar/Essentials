@@ -1,7 +1,7 @@
 """ 
     Author: Vinicius Bacelar
     Version: 1.0.1
-    GitHub @vinicius-bacelar
+    GitHub: @vinicius-bacelar
 """
 # import library
 import os
@@ -126,6 +126,7 @@ def snap():
     os.system("sudo apt install snapd && sudo snap install snap-store")
 
 # Install Make
+
 
 def make():
     os.system("sudo apt-get install make")
@@ -382,6 +383,13 @@ def spotify():
     else:
         print("Incorrect answer")
 
+
+# Link GitHub
+
+
+def github():
+    os.system('python3 -m webbrowser -t "https://github.com/vinicius-bacelar"')
+
 # Main function
 
 
@@ -433,11 +441,6 @@ def app():
     discord()
     chrome()
 
-# Link GitHub
-
-
-def github():
-    os.system('python3 -m webbrowser -t "https://github.com/vinicius-bacelar"')
 
 # Function final
 
@@ -455,3 +458,7 @@ app()
 end()
 
 print("======End script======")
+
+nome = "Bruno"
+
+nomes = [nome, nome, nome]
