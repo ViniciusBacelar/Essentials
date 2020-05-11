@@ -74,7 +74,12 @@ def essentials():
 
     def virtualenv():
         os.system("sudo apt install -y python3-venv")
-
+    #OpenJDK
+    
+    def openjdk():
+        os.system("sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4")
+        os.system("sudo apt-get install default-jdk")
+        
     # Download Ruby
 
     def ruby():
@@ -379,6 +384,7 @@ def essentials():
         python()
         virtualenv()
         ruby()
+        openjdk()
         php()
         apache2()
         mysql()
