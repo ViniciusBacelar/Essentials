@@ -100,19 +100,6 @@ def essentials():
     def mysql():
         os.system("sudo apt-get install mysql-server && mysql_secure_installation")
 
-    # Download node
-
-    def node():
-        os.system("""curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-        sudo apt-get install -y nodejs && sudo apt-get install -y nodejs""")
-
-    # Install Yarn
-
-    def yarn():
-        os.system("""curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-        echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-        sudo apt-get update && sudo apt-get install yarn""")
-
     # Install Snap Suport
 
     def snap():
@@ -388,8 +375,6 @@ def essentials():
         php()
         apache2()
         mysql()
-        node()
-        yarn()
 
     # Function install apps
 
