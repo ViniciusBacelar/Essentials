@@ -1,6 +1,6 @@
 """ 
         Author: Vinicius Bacelar
-        Version: 1.0.1
+        Version: 2.0
         GitHub: @ViniciusBacelar
 """
 
@@ -22,10 +22,9 @@ def essentials():
     def autoremove():
         os.system("sudo apt autoremove")
 
-    # Essential dependencies
-
-    def dependencies():
-        os.system("sudo apt-get install -y build-essential checkinstall && sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev")
+    # Upgrade
+    def upgrade():
+        os.system("sudo apt-get full-upgrade -y")
 
     # Utilities
 
@@ -33,57 +32,10 @@ def essentials():
         os.system(
             "sudo apt install unace rar unrar p7zip-rar p7zip sharutils uudeview mpack arj cabextract lzip lunzip plzip")
 
-    # Propiertes common
-
-    def common():
-        os.system("sudo apt-get install software-properties-common")
-
-    # Restricted Extras
-
-    def restricted():
-        os.system("sudo apt install ubuntu-restricted-extras")
-
-    # Codecs
-
-    def codecs():
-        os.system("sudo apt install libdvd-pkg && sudo dpkg-reconfigure libdvd-pkg")
-
-    # Tweaks
-
-    def tweaks():
-        os.system("sudo apt-get install gnome-tweaks")
-
     # Download Git
 
     def git():
         os.system("sudo apt-get install git")
-
-    # Download Python
-
-    def python():
-        os.system(
-            "sudo apt install python3-pip && sudo apt install -y build-essential libssl-dev libffi-dev python3-dev")
-        os.system("sudo apt-get install git python3-dev python3-setuptools python3-numpy python3-opengl \
-        libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev \
-        libsdl1.2-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev \
-        libtiff5-dev libx11-6 libx11-dev fluid-soundfont-gm timgm6mb-soundfont \
-        xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic fontconfig fonts-freefont-ttf libfreetype6-dev")
-        os.system("sudo apt-get install -y python3-distutils python3-testresources")
-
-    # Download VirtualEnv
-
-    def virtualenv():
-        os.system("sudo apt install -y python3-venv")
-    #OpenJDK
-    
-    def openjdk():
-        os.system("sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4")
-        os.system("sudo apt-get install default-jdk")
-        
-    # Download Ruby
-
-    def ruby():
-        os.system("sudo apt-get install ruby-full")
 
     # Download PHP
 
@@ -95,20 +47,11 @@ def essentials():
     def apache2():
         os.system("sudo apt-get install apache2")
 
-    # Download MySql
-
-    def mysql():
-        os.system("sudo apt-get install mysql-server && mysql_secure_installation")
 
     # Install Snap Suport
 
     def snap():
         os.system("sudo apt install snapd && sudo snap install snap-store")
-
-    # Install Make
-
-    def make():
-        os.system("sudo apt-get install make")
 
     # Install Flatpak Suport
 
@@ -120,11 +63,6 @@ def essentials():
     def upgrade():
         os.system("sudo apt-get -y full-upgrade && sudo apt-get -y dist-upgrade")
 
-    # Install Apps
-
-    def transport_https():
-        os.system("sudo apt-get install apt-transport-https")
-
     # Sublime
 
     def sublime():
@@ -133,17 +71,6 @@ def essentials():
         if (sublime == "Y") or (sublime == "YES"):
             os.system("sudo snap install sublime-text --classic")
         elif (sublime == "N") or (sublime == "NO"):
-            print("OK")
-        else:
-            print("Incorrect answer")
-
-    # WPS
-
-    def wps():
-        wps = str(input("Install WPS? Y/y or N/n? ")).strip().upper()
-        if(wps == "Y") or (wps == "YES"):
-            os.system("flatpak install flathub com.wps.Office")
-        elif(wps == "N") or (wps == "NO"):
             print("OK")
         else:
             print("Incorrect answer")
@@ -171,51 +98,6 @@ def essentials():
         else:
             print("Incorrect answer")
 
-    # Android Studio
-
-    def android():
-        android_studio = str(
-            input("Install Android Studio? Y/y or N/n? ")).strip().upper()
-        if (android_studio == "Y") or (android_studio == "YES"):
-            os.system("sudo snap install android-studio --classic")
-        elif (android_studio == "N") or (android_studio == "NO"):
-            print("OK")
-        else:
-            print("Incorrect answer")
-
-    # Webstorm
-
-    def webstorm():
-        webstorm = str(input("Install PhpStorm? Y/y or N/n? ")).strip().upper()
-        if (webstorm == "Y") or (webstorm == "YES"):
-            os.system("sudo snap install webstorm --classic")
-        elif(webstorm == "N") or (webstorm == "NO"):
-            print("OK")
-        else:
-            print("Incorrect answer")
-
-    # CodeBlocks
-
-    def codeblocks():
-        codeblocks = str(
-            input("Install CodeBlocks? Y/y or N/n? ")).strip().upper()
-        if (codeblocks == "Y") or (codeblocks == "YES"):
-            os.system("sudo apt-get install codeblocks")
-        elif(codeblocks == "N") or (codeblocks == "NO"):
-            print("OK")
-        else:
-            print("Incorrect answer")
-
-    # RubyMine
-
-    def rubymine():
-        ruby = str(input("Install RubyMine? Y/y or N/n? ")).strip().upper()
-        if(ruby == "Y") or (ruby == "YES"):
-            os.system("sudo snap install rubymine --classic")
-        elif(ruby == "N") or (ruby == "NO"):
-            print("OK")
-        else:
-            print("Incorrect answer")
 
     # VLC
 
@@ -237,29 +119,6 @@ def essentials():
             os.system(
                 "sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable && sudo apt-get install qbittorrent")
         elif(bittorrent == "N") or (bittorrent == "NO"):
-            print("OK")
-        else:
-            print("Incorrect answer")
-
-    # PhpMyAdmin
-
-    def myadmin():
-        php = str(input("Install PhpMyAdmin? Y/y or N/n? ")).strip().upper()
-        if(php == "Y") or (php == "YES"):
-            os.system("sudo apt-get install phpmyadmin")
-        elif(php == "N") or (php == "NO"):
-            print("OK")
-        else:
-            print("Incorrect Answer")
-
-    # Filezilla
-
-    def filezilla():
-        filezilla = str(
-            input("Install Filezilla? Y/y or N/n? ")).strip().upper()
-        if (filezilla == "y") or (filezilla == "Y") or (filezilla == "yes"):
-            os.system("flatpak install flathub org.filezillaproject.Filezilla")
-        elif(filezilla == "N") or (filezilla == "NO"):
             print("OK")
         else:
             print("Incorrect answer")
@@ -311,30 +170,6 @@ def essentials():
         else:
             print("Incorrect answer")
 
-    # VirtuaBox
-
-    def virtualbox():
-        virtualbox = str(
-            input("Install VirtualBox? Y/y or N/n?")).strip().upper()
-        if(virtualbox == "Y") or (virtualbox == "YES"):
-            os.system("sudo apt-get install virtualbox")
-        elif(virtualbox == "N") or (virtualbox == "NO"):
-            print("OK")
-        else:
-            print("Incorrect answer")
-
-    # PyCharm
-
-    def pycharm():
-        pycharm = str(input("Install PyCharm CE? Y/y or N/n? ")
-                      ).strip().upper()
-        if(pycharm == "Y") or (pycharm == "YES"):
-            os.system("sudo snap install pycharm-community --classic")
-        elif(pycharm == "N") or (pycharm == "NO"):
-            print("OK")
-        else:
-            print("incorrect answer")
-
     # Spotify
 
     def spotify():
@@ -358,43 +193,22 @@ def essentials():
         upgrade()
         autoremove()
         utilities()
-        common()
-        dependencies()
-        restricted()
-        transport_https()
-        codecs()
-        tweaks()
         git()
-        make()
         snap()
         flatpak()
-        python()
-        virtualenv()
-        ruby()
-        openjdk()
         php()
         apache2()
-        mysql()
 
     # Function install apps
 
     def app():
         sublime()
-        wps()
         insomnia()
         visual_studio_code()
-        android()
-        webstorm()
-        pycharm()
-        codeblocks()
-        rubymine()
         vlc()
         spotify()
         bittorrent()
-        virtualbox()
         docker()
-        myadmin()
-        filezilla()
         steam()
         discord()
         chrome()
