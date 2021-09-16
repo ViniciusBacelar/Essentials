@@ -11,7 +11,7 @@ def essentials():
     import os
 
     print("======Start Script======")
-    # Main tools
+   
     # Update your repositories
 
     def update():
